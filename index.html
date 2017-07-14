@@ -27,7 +27,7 @@ function writeclock() {
 	i_clock++
 	if (document.all || document.getElementById || document.layers) {
 		clockid[i_clock]="clock"+i_clock
-		document.write("<span id='"+clockid[i_clock]+"' style='position:relative; text-align: center;'>"+thistime+"</span>")
+		document.write("<p id='"+clockid[i_clock]+"' align="center" style='position:relative'>"+thistime+"</p>")
 	}
 }
 
