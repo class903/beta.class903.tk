@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>903 - Home Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!--
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 -->
@@ -27,7 +27,7 @@ function writeclock() {
 	i_clock++
 	if (document.all || document.getElementById || document.layers) {
 		clockid[i_clock]="clock"+i_clock
-		document.write("<span id='"+clockid[i_clock]+"' style='position:relative'>"+thistime+"</span>")
+		document.write("<span id='"+clockid[i_clock]+"' style='position:relative; text-align: center;'>"+thistime+"</span>")
 	}
 }
 
