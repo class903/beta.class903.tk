@@ -5,9 +5,58 @@
     <meta charset="utf-8">
     <title>903 - Home Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+-->
+    <script>
+var clockid=new Array()
+var clockidoutside=new Array()
+var i_clock=-1
+var thistime= new Date()
+var hours=thistime.getHours()
+var minutes=thistime.getMinutes()
+var seconds=thistime.getSeconds()
+if (eval(hours) <10) {hours="0"+hours}
+if (eval(minutes) < 10) {minutes="0"+minutes}
+if (seconds < 10) {seconds="0"+seconds}
+var thistime = hours+":"+minutes+":"+seconds
+	
+function writeclock() {
+	i_clock++
+	if (document.all || document.getElementById || document.layers) {
+		clockid[i_clock]="clock"+i_clock
+		document.write("<span id='"+clockid[i_clock]+"' style='position:relative'>"+thistime+"</span>")
+	}
+}
+
+function clockon() {
+	thistime= new Date()
+	hours=thistime.getHours()
+	minutes=thistime.getMinutes()
+	seconds=thistime.getSeconds()
+	if (eval(hours) <10) {hours="0"+hours}
+	if (eval(minutes) < 10) {minutes="0"+minutes}
+	if (seconds < 10) {seconds="0"+seconds}
+	thistime = hours+":"+minutes+":"+seconds
+		
+	if (document.all) {
+		for (i=0;i<=clockid.length-1;i++) {
+			var thisclock=eval(clockid[i])
+			thisclock.innerHTML=thistime
+		}
+	}
+	
+	if (document.getElementById) {
+		for (i=0;i<=clockid.length-1;i++) {
+			document.getElementById(clockid[i]).innerHTML=thistime
+		}
+	}
+	var timer=setTimeout("clockon()",1000)
+}
+window.onload=clockon
+</script>
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -39,6 +88,7 @@
 <div class="container">
 <br/>
 <h1 style="color: white;"align="center">Where you want to go?</h1>
+    <script>writeclock()</script>
 <hr/>
 <div class="hp-buttons" align="center">
     <button type="button" style="background-color: transparent; line-height: 24px; border: 0;" onclick="location.href='./聯絡簿.html'">📝聯絡簿</button>   
