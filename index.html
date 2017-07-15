@@ -27,7 +27,7 @@ function writeclock() {
 	i_clock++
 	if (document.all || document.getElementById || document.layers) {
 		clockid[i_clock]="clock"+i_clock
-		document.write("<p id='"+clockid[i_clock]+"' align="center" style='position:relative'>"+thistime+"</p>")
+		document.write("<span id='"+clockid[i_clock]+"' style='position:relative'>"+thistime+"</span>")
 	}
 }
 
@@ -88,7 +88,7 @@ window.onload=clockon
 <div class="container">
 <br/>
 <h1 style="color: white;"align="center">Where you want to go?</h1>
-	<span align="center" style="color: white; text-align: center"><script>writeclock()</script></span>
+	<div style="text-align: center;"><span style="color: white"><script>writeclock()</script></span></div>
 <hr/>
 <div class="hp-buttons" align="center">
     <button type="button" style="background-color: transparent; line-height: 24px; border: 0;" onclick="location.href='./聯絡簿.html'">📝聯絡簿</button>   
