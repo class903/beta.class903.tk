@@ -1,0 +1,43 @@
+< !DOCTYPE html>
+<head><style>
+					body { margin: 0; padding: 0; }
+				</style>
+				<script type="text/javascript" language="JavaScript" src="/js/anim-library.js"></script>
+                <script type="text/javascript" language="JavaScript" src="/js/html5clocks.js"></script>
+                <script type="text/javascript" language="JavaScript" src="/clocks/HTML5/html5-005.js?4235"></script>
+				<script type="text/javascript" language="JavaScript">
+					function isCanvasSupported(){
+						var elem = document.createElement("canvas");
+						return !!(elem.getContext && elem.getContext("2d"));
+					}
+		if(isCanvasSupported()){
+var clock,animFrame;
+animFrame = new AnimFrame();
+clock = new Clock(
+new BaseClock(
+2017,
+7,
+16,
+6,
+25,
+2,
+null),
+"/clocks/HTML5/",
+"",
+"http://www.clocklink.com",
+"/img/ads/250_250.png",
+{
+clock : '005',
+amp;timezone : 'GMT0800',
+amp;color : 'blue',
+amp;size : '1000',
+amp;Title : '',
+amp;Message : '',
+amp;Target : '',
+amp;From : '2017,1,1,0,0,0',
+size : '500',
+color : 'black'});
+animFrame.push(clock);
+animFrame.start();
+}
+				</script></head><body></body>
