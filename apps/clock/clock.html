@@ -1,46 +1,213 @@
-<!DOCTYPE html>
-<html>
-<head><style>
-					body { margin: 0; padding: 0; }
-				</style>
-				<script type="text/javascript" language="JavaScript" src="/js/anim-library.js"></script>
-                <script type="text/javascript" language="JavaScript" src="/js/html5clocks.js"></script>
-                <script type="text/javascript" language="JavaScript" src="/clocks/HTML5/html5-018.js?7402"></script>
-				<script type="text/javascript" language="JavaScript">
-					function isCanvasSupported(){
-						var elem = document.createElement("canvas");
-						return !!(elem.getContext && elem.getContext("2d"));
-					}
-		if(isCanvasSupported()){
-var clock,animFrame;
-animFrame = new AnimFrame();
-clock = new Clock(
-new BaseClock(
-2017,
-7,
-18,
-19,
-31,
-21,
-null),
-"/clocks/HTML5/",
-"",
-"http://www.clocklink.com",
-"/img/ads/440_45.png",
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#" class="desktop classic gr__tw_piliapp_com"><head>
+<meta charset="utf-8">
+<title>線上時鐘</title>
+<meta http-equiv="refresh" content="3600">
+
+<link href="https://beta.class903.tk/apps/clock/" rel="canonical">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+<link rel="stylesheet" type="text/css" href="//tw.piliapp.com/static/s3/apps/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css"><link rel="stylesheet" type="text/css" href="//tw.piliapp.com/assets/us2/v2/9bx6ueyih435jh4/2vrdt.css"><style type="text/css">
+.loading {background-image:url(//tw.piliapp.com/static/s3/apps/ajax/libs/jquerymobile/1.4.5/images/ajax-loader.gif);}
+</style>
+
+<link rel="apple-touch-icon" href="//assets-us2.piliapp.com/s3pxy/twemoji/touchicon/1f557.png">
+<link rel="shortcut icon" href="//assets-us2.piliapp.com/s3pxy/twemoji/ico/1f557.ico">
+<meta property="og:image" content="https://assets-us2.piliapp.com/s3pxy/time/thumb-city.jpg">
+<meta name="google" value="notranslate">
+
+<script async="" src="//assets-us2.piliapp.com/s3pxy/base/ga.min.js"></script><script type="application/ld+json">
 {
-clock : '018',
-timezone : 'ACST',
-color : 'blue',
-size : '440',
-Title : '',
-Message : '',
-Target : '',
-From : '2017,1,1,0,0,0',
-DateFormat : 'yyyy / mm / dd DDD',
-TimeFormat : 'hh:mm:ss TT',
-Color : 'blue'});
-animFrame.push(clock);
-animFrame.start();
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "item": {
+      "@id": "https://tw.piliapp.com",
+      "name": "\u5de5\u5177\u90a6"    }
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "item": {
+      "@id": "https://tw.piliapp.com/time-now/",
+      "name": "\u4e16\u754c\u6642\u9593"    }
+  }
+  ]
 }
-				</script><style type="text/css">body{ margin: 0px; padding:0px; }</style></head><body><canvas id="018" width="440" height="637"></canvas><div id="ad" style="position: absolute; top: 0px; left: 0px; cursor: pointer;"><canvas width="440" height="637" style="opacity: 0;"></canvas></div></body>
-</html>
+</script>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//assets-us2.piliapp.com/s3pxy/base/ga.min.js','ga');
+
+var ga_trackers = [''];
+ga('create', 'UA-973474-10');
+ga('create', 'UA-973474-5',{'name':'t2'});
+ga_trackers.push('t2.');
+
+
+</script>
+
+
+<script type="text/javascript">(function(c){for(var b in c){var d=c[b];ga(d+"require","displayfeatures");if(typeof ga_dimensions!=="undefined"){for(var a in ga_dimensions){ga(d+"set","dimension"+ga_dimensions[a][0],ga_dimensions[a][1])}}if(typeof ga_dimension!=="undefined"){ga(d+"set","dimension"+ga_dimension[0],ga_dimension[1])}if(typeof ga_pageview_params==="undefined"){ga(d+"send","pageview")}else{ga(d+"send","pageview",ga_pageview_params)}}})(ga_trackers);</script>
+<script>
+var _gaq = _gaq || [];
+var GA_EVENT_ID = 'UA-973474-16';
+
+(function(w){
+var l=w.location,h=w.history,m=l.href.match(/#ref=([\w-]+)$/);
+if(!m)return;l.hash='';
+
+ga('create', GA_EVENT_ID, 'auto', {'name': 'event'});
+ga('event.send','event','ref',l.pathname+l.search,m[1]);
+
+if(h.replaceState)h.replaceState('',document.title,l.href.split('#')[0]);
+})(window);
+</script>
+
+
+</head>
+<body class="cjk" data-gr-c-s-loaded="true" style="zoom: 1;">
+<div class="container">
+	<br>
+
+    <div class="row">
+        <div class="span12 header-wrap">
+        <div class="social-likes social-likes_visible" data-url="https://tw.piliapp.com/time-now/clock/" data-counters="no">
+    <div class="social-likes__widget social-likes__widget_plusone" title="Share link on Google+"><span class="social-likes__button social-likes__button_plusone"><span class="social-likes__icon social-likes__icon_plusone"></span>+</span></div>
+    <div class="social-likes__widget social-likes__widget_twitter" title="Share link on Twitter"><span class="social-likes__button social-likes__button_twitter"><span class="social-likes__icon social-likes__icon_twitter"></span></span></div>
+    <div class="social-likes__widget social-likes__widget_facebook" title="Share link on Facebook"><span class="social-likes__button social-likes__button_facebook"><span class="social-likes__icon social-likes__icon_facebook"></span></span></div>
+</div>
+                </div>
+
+<div class="offset3 span6">
+<div id="clock1" class="row clocker">
+
+<div class="digital span6 clearfix">
+<div class="time">
+<span class="hh"></span>
+<span class="sep1">:</span>
+<span class="mm"></span>
+<span class="sep2">:</span>
+<span class="ss"></span>
+</div>
+<div class="date"></div>
+</div><!-- /#clock -->
+
+
+<div class="span6">
+
+<div class="clock-info">
+
+
+<table class="time-change">
+<tbody><tr>
+<th>上一個</th>
+<th>現在</th>
+<th>下一個</th> 
+</tr>
+<tr>
+<td class="prev-dst">
+
+<div class="date-str"></div>
+<div class="clock-change">
+    <span class="from"></span>
+    <span class="arrow">→</span>
+    <span class="to"></span>
+</div>
+<div class="zone-change">
+    <span class="from"></span>
+    <span class="arrow">→</span>
+    <span class="to"></span>
+</div>
+<div class="utc-change">
+UTC <span class="from"></span>
+<span class="arrow">→</span>
+UTC <span class="to"></span>
+</div>
+
+</td>
+<td class="now-dst">
+時區: <span class="zone-abbr">CST</span>
+
+<br> 
+
+UTC/GMT: <span class="utc-offset">+8:00</span>
+
+<br> 
+
+<span class="dst-list">
+<span class="null">
+<span class="dst-true dst-item">DST On</span>
+<span class="dst-false dst-item">DST Off</span>
+</span>
+</span>
+
+</td>
+<td class="next-dst">
+<div class="date-str"></div>
+<div class="clock-change">
+    <span class="from"></span>
+    <span class="arrow">→</span>
+    <span class="to"></span>
+</div>
+<div class="zone-change">
+    <span class="from"></span>
+    <span class="arrow">→</span>
+    <span class="to"></span>
+</div>
+<div class="utc-change">
+UTC <span class="from"></span>
+<span class="arrow">→</span>
+UTC <span class="to"></span>
+</div>
+</td>
+</tr>
+
+
+
+
+</tbody></table>
+
+</div><!-- /#clock-info -->
+
+</div>
+
+</div><!-- /.clocker -->
+</div>
+
+                <div id="ads-slots" class="span12">
+        
+<div class="ads ads-300x250 idx-0" style="width:300px;height:250px"><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- piliapp-base-300x250 -->
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-3883368534542453" data-ad-slot="0597800127"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        
+<div class="ads ads-300x250 idx-1" style="width:300px;height:250px;margin:auto 10px;">
+<!-- piliapp-base-300x250 -->
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-3883368534542453" data-ad-slot="0597800127"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        
+<div class="ads ads-300x250 idx-2" style="width:300px;height:250px">
+<!-- piliapp-base-300x250 -->
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-3883368534542453" data-ad-slot="0597800127"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+        </div>
+    </div>
+</div>
+<script>
+var APP_URI = "https://tw.piliapp.com/time-now/";
+</script>
+
+<script type="text/javascript">
+</script>
+
+</body></html>
